@@ -1,8 +1,8 @@
 #include <ESP8266WiFi.h>
 #include <PubSubClient.h>
 #include <Servo.h>
-const char* ssid = ""; //wifi name
-const char* password = ""; //wifi password
+const char* ssid = ""; //wifi name (saya padam sbb private information)
+const char* password = ""; //wifi password (saya padam sbb private information)
  const char* mqtt_server = "broker.mobilepit.com";
 
 Servo myservo;  // create servo object to control a servo
