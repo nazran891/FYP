@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/ic_ewewe">
+
+    <Button
+        android:id="@+id/btnpub"
+        android:layout_width="131dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="#85410C"
+        android:text="FEED NOW"
+        android:textSize="16sp"
+        app:iconTint="#F8F8F8"
+        app:layout_constraintBottom_toTopOf="@+id/disbtn"
+        app:layout_constraintEnd_toStartOf="@+id/btnsub"
+        app:layout_constraintHorizontal_bias="0.544"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtSubs"
+        app:layout_constraintVertical_bias="0.104" />
+
+    <TextView
+        android:id="@+id/txtSubs"
+        android:layout_width="97dp"
+        android:layout_height="84dp"
+        android:foreground="@drawable/wewew_icon"
+        android:gravity="center"
+        android:text="0%"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/disbtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.51" />
+
+    <Button
+        android:id="@+id/btnsub"
+        android:layout_width="148dp"
+        android:layout_height="62dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="#3F51B5"
+        android:text="FOOD AMOUNT"
+        app:layout_constraintBottom_toTopOf="@+id/disbtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtSubs"
+        app:layout_constraintVertical_bias="0.099" />
+
+    <ProgressBar
+        android:id="@+id/progressBar3"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="276dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:progressTint="#DA2E2E"
+        app:layout_constraintBottom_toTopOf="@+id/txtSubs"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.908" />
+
+    <Button
+        android:id="@+id/disbtn"
+        android:layout_width="409dp"
+        android:layout_height="69dp"
+        android:backgroundTint="#D50D0D"
+        android:text="DISCONNECT &amp; EXIT"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnHistory"
+        android:layout_width="178dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="60dp"
+        android:backgroundTint="#0B610E"
+        android:text="Feeding History"
+        app:layout_constraintBottom_toTopOf="@+id/disbtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtSubs"
+        app:layout_constraintVertical_bias="0.602" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="320dp"
+        android:layout_height="133dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="casual"
+        android:text="SMARTFEED - SMART PET FEEDER"
+        android:textAlignment="center"
+        android:textColor="#EC5FD8"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/progressBar3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.06" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
